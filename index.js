@@ -26,7 +26,10 @@ app.use('/uploads', express.static('uploads'));
 
 // Import routes
 const productRoutes = require('./routes/productRoutes');
+const categoryRoutes = require('./routes/categoryRoutes'); // Đảm bảo import đúng
+
 app.use('/api/products', productRoutes);
+app.use('/api/categories', categoryRoutes);
 
 
 
